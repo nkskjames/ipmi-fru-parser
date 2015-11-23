@@ -6,7 +6,7 @@ EXES += phosphor-read-eeprom
 
 phosphor-read-eeprom_OBJS  += readeeprom.o argument.o
 phosphor-read-eeprom_LIBS  += writefrudata
-libstrgfnhandler.so_EXTRA_LIBS  += libwritefrudata.so
+#libstrgfnhandler.so_EXTRA_LIBS  += writefrudata
 libwritefrudata.so_NEEDED  += libsystemd
 phosphor-read-eeprom_NEEDED  += libsystemd
 
